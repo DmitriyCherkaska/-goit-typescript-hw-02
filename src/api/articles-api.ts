@@ -11,7 +11,7 @@ const fetchImagesApi = async <T>(
     client_id: API_KEY,
     query: searchTerm,
     page: page.toString(),
-    per_page: 12,
+    per_page: '12',
     orientation: 'landscape',
   });
 
