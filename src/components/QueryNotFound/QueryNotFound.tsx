@@ -1,4 +1,4 @@
-const RequestNotFound = () => {
+const QueryNotFound = () => {
   return <p>Nothing found for your search... Do another search</p>;
 };
-export default RequestNotFound;
+export default QueryNotFound;
