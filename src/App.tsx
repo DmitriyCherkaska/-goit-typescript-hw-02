@@ -6,8 +6,8 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "./components/ImageModal/ImageModal";
-import fetchImagesFromApi from "./api/api";
-import RequestNotFound from "./components/RequestNotFound/RequestNotFound";
+import fetchImagesFromApi from "./api/articles-api";
+import RequestNotFound from "./components/QueryNotFound/QueryNotFound";
 
 function App() {
   const [images, setImage] = useState([]);
@@ -93,7 +93,7 @@ function App() {
       {images.length > 0 && (
         <ImageGallery images={images} onImageClick={openModal} />
       )}
-      {isEmpty && !isLoading && <RequestNotFound />}
+      {isEmpty && !isLoading && <QueryNotFound />}
       <ImageModal
         likes={likes}
         srcModal={srcModal}
