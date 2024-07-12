@@ -1,6 +1,6 @@
 import style from './ImageModal.module.css';
 import Modal from 'react-modal';
-import { AiOutlineLike } from "react-icons/ai";
+import { AiOutlineLike } from 'react-icons/ai';
 
 Modal.setAppElement('#root');
 
