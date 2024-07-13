@@ -6,7 +6,7 @@ import SearchBar from './components/SearchBar/SearchBar';
 import ErrorMessage from './components/ErrorMessage/ErrorMessage';
 import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn';
 import ImageModal from './components/ImageModal/ImageModal';
-import fetchImagesFromApi from './api/articles-api';
+import fetchImagesApi from './api/articles-api';
 import QueryNotFound from './components/QueryNotFound/QueryNotFound';
 import { Image, ImageModalProps } from './types';
 
@@ -34,7 +34,7 @@ function App() {
       try {
         setIsLoading(true);
         setError(false);
-        const { results, total_pages } = await fetchImagesFromApi<Response>(
+        const { results, total_pages } = await fetchImagesApi<Response>(
           query,
           page,
         );
