@@ -10,8 +10,8 @@ export interface Image {
 }
 export interface ImageModalProps {
   isOpen: boolean;
-  likes: number|null;
-  author: string|null;
-  srcModal: string|null;
+  likes: number | null;
+  author: string | null;
+  srcModal: string | null;
   closeModal: () => void;
 }
