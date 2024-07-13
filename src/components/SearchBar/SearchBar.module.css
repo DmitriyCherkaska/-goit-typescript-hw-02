@@ -28,7 +28,7 @@
   margin-right: 2px;
   box-sizing: border-box;
   padding: 8px;
-  border: 1px solid rgb(146, 148, 248);
+  border: 1px solid rgb(146, 248, 151);
   transition: box-shadow 0.25s;
   background-color: rgba(125, 125, 153, 0.2);
   color: white;
@@ -36,7 +36,7 @@
 }
 .input:hover,
 .input:focus {
-  box-shadow: 1px 1px 10px 5px rgba(146, 148, 248, 0.4);
+  box-shadow: 1px 1px 10px 5px rgba(146, 248, 173, 0.4);
 }
 .input::placeholder {
   color: rgb(189, 187, 187);
@@ -46,7 +46,7 @@
   width: 150px;
   text-transform: uppercase;
   color: rgb(228, 225, 225);
-  border: 1px solid rgb(146, 148, 248);
+  border: 1px solid rgb(146, 248, 151);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 600;
@@ -60,7 +60,7 @@
 
 .btn:hover,
 .btn:focus {
-  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  box-shadow: 1px 1px 25px 10px rgba(146, 248, 173, 0.4);
 }
 .btn:focus {
   outline: none;
