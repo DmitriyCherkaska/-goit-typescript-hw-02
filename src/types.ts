@@ -8,6 +8,7 @@ export interface Image {
   };
   user: { name: string };
 }
+
 export interface ImageModalProps {
   isOpen: boolean;
   likes: number | null;

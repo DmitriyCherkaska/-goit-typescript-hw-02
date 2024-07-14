@@ -12,6 +12,7 @@ import { Image, ImageModalProps } from './types';
 
 interface Response {
   results: Image[];
+  total: number;
   total_pages: number;
 }
 
