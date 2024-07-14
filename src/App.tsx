@@ -8,13 +8,7 @@ import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn';
 import ImageModal from './components/ImageModal/ImageModal';
 import fetchImagesApi from './api/articles-api';
 import QueryNotFound from './components/QueryNotFound/QueryNotFound';
-import { Image, ImageModalProps } from './types';
-
-interface Response {
-  results: Image[];
-  total: number;
-  total_pages: number;
-}
+import { Image } from './types';
 
 function App() {
   const [images, setImage] = useState<Image[]>([]);
@@ -30,12 +24,18 @@ function App() {
   const [author, setAuthor] = useState<string | null>(null);
   const [isBtnDisabled, setIsBtnDisabled] = useState<boolean>(false);
 
+  interface Response {
+    results: Image[];
+    total: number;
+    total_pages: number;
+  }
+
   useEffect(() => {
     const fetchImages = async () => {
       try {
         setIsLoading(true);
         setError(false);
-        const { results, total_pages } = await fetchImagesApi<Response>(
+        const { results, total_pages }: Response = await fetchImagesApi(
           query,
           page,
         );

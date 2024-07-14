@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Image } from '../types';
 
 const API_KEY = 'HG9aTOmtGBry4YtaddJMiOIW_BQRD2Kv8Luvt536hcs';
 axios.defaults.baseURL = `https://api.unsplash.com`;

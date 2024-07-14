@@ -1,7 +1,7 @@
+// import style from './ImageGallery.module.css';
 import { FC } from 'react';
 import { Image } from '../../types';
 import ImageCard from '../ImageCard/ImageCard';
-// import style from './ImageGallery.module.css';
 
 interface ImageGalleryProps {
   images: Image[];
