@@ -4,12 +4,6 @@ import { Image } from '../types';
 const API_KEY = 'nBjDx3M3zD2WrpPhfkSHVh1YXawb-uZYOaY5iVd1jYc';
 axios.defaults.baseURL = 'https://api.unsplash.com';
 
-export interface UnsplashAPIResponse {
-  results: Image[];
-  total: number;
-  total_pages: number;
-}
-
 const fetchImagesApi = async <T>(
   searchTerm: string = '',
   page: number,
